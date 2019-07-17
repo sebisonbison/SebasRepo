@@ -1,0 +1,37 @@
+.nav {
+}
+
+.home {
+    display: inline-block;
+    padding: 10px;
+    width: 10%;
+    text-align: center;
+}
+
+.work {
+    display: inline-block;
+    padding: 10px;
+    width: 10%;
+    text-align: center;
+}
+
+.photo {
+    display: inline-block;
+    padding: 10px;
+    width: 10%;
+    text-align: center;
+}
+
+.about {
+    display: inline-block;
+    padding: 10px;
+    width: 10%;
+    text-align: center;
+}
+
+.contact {
+    display: inline-block;
+    padding: 10px;
+    width: 10%;
+    text-align: center;
+}
