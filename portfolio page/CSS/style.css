@@ -1,37 +1,106 @@
-.nav {
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end CSS RESET */
+#navbar {
+    border-bottom: 1px solid black;
+    display: flex;
+}
+.rightnav {
+    padding: 10px;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-grow: 3;
+}
 .home {
-    display: inline-block;
     padding: 10px;
-    width: 10%;
-    text-align: center;
+    display: inline-block;
+   flex-grow: 7; 
 }
-
 .work {
-    display: inline-block;
-    padding: 10px;
-    width: 10%;
-    text-align: center;
+   display: inline-block;
 }
-
-.photo {
-    display: inline-block;
-    padding: 10px;
-    width: 10%;
-    text-align: center;
+.photos {
+  display: inline-block; 
 }
-
 .about {
-    display: inline-block;
-    padding: 10px;
-    width: 10%;
-    text-align: center;
+  display: inline-block;
+}
+.contact {
+  display: inline-block; 
+}
+.myname {
+    display: flex;
+     width: 60%; 
+    /*border: 1px solid black;*/
+    margin-top: 2%;
+    margin-bottom: 5px;
+    justify-content: space-around;
+  }
+.maintext {
+  display: flex;
+  width: 60%; 
+  /*border: 1px solid black;*/
+  text-align: justify;
+  line-height: 20px;
+}
+#headshot {
+  margin: 2%;
+  /* display: flex; */
+  width: 30%;
+  height: auto;
+  display: inline-block;
+  /*border: 1px solid black;*/
+  float: left;
 }
 
-.contact {
-    display: inline-block;
-    padding: 10px;
-    width: 10%;
-    text-align: center;
+img {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
 }
+
+.myname span {
+   font-size: 24px; font-weight: 900;
+   }
