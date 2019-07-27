@@ -47,28 +47,103 @@ table {
     border-bottom: 1px solid black;
     display: flex;
 }
-.rightnav {
-    padding: 10px;
-    display: inline-flex;
-    justify-content: space-between;
-    flex-grow: 3;
+/* name animation*/
+.name { 
+  position: relative;
+ /* padding: 2%;*/
+ }
+ .name:hover {cursor:pointer;}
+ .name .before { 
+   display: inline-block;
+   opacity: 1;
+   transition: opacity .5s ease-in-out; }
+ .afterS {display: none;}
+ .afterE {display: none;}
+ 
+ .name:hover .afterS { 
+   display: inline-block; 
+   opacity: 1;
+   position: absolute; 
+   left: 0px; 
+   top: 0;
+ 
+   animation: fullName 1s ease-in;
+     
+ }
+ .name:hover .afterE { 
+   display: inline-block; 
+   opacity: 1;
+   position: relative; 
+   left: 26px; 
+   top: 0;
+   animation: fullName 1.5s ease-in;
+     
+ }
+ 
+ .name:hover .j {
+ animation: name1 .5s ease forwards; 
+ }
+ 
+ .name:hover .e {
+ animation: name2 .5s ease forwards; 
+ }
+ 
+ .s, .j, .e {
+   display: inline-block;
+   width: 20px;
+   position: relative;
+ }
+ 
+ @keyframes fullName {
+   from {
+     opacity: 0;
+   }
+   to {
+     opacity: 1;
+   }
+ }
+ @keyframes name1 {
+   from {
+   transform: translateX(0px);}
+   to {
+     transform: translateX(50px);}
+ }
+ 
+ @keyframes name2 {
+   from {
+   transform: translateX(0px);}
+   to {
+     transform: translateX(50px);}
+ } /*name animation */
+
+ .rightnav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
 }
-.home {
+
+/* .home {
     padding: 10px;
     display: inline-block;
-   flex-grow: 7; 
+   flex-grow: 7; */
 }
 .work {
    display: inline-block;
+  
 }
 .photos {
   display: inline-block; 
+  
 }
 .about {
   display: inline-block;
+  
 }
 .contact {
-  display: inline-block; 
+  display: inline-block;
+  
 }
 .myname {
     display: flex;
@@ -76,7 +151,8 @@ table {
     /*border: 1px solid black;*/
     margin-top: 2%;
     margin-bottom: 5px;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
+    text-align: justify;
   }
 .maintext {
   display: flex;
